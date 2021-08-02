@@ -1,0 +1,163 @@
+*{
+    top: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Russo One';font-size: 40px;
+    height: 900px;
+    overflow: hidden;
+}
+
+
+body{
+    background-color: rgb(98, 0, 114);
+    color: white;
+}
+
+#starting-screen{
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* change below line after gamescreen modification */
+    /* display: none; */
+}
+
+#starting-screen p, div{
+    align-items: center;
+    margin-top: 60px;
+}
+
+#starting-screen p{
+    position: relative;
+    top: 40%;
+}
+
+#start-button{
+    position: relative;
+    font-size: 30px;
+    display: flex;
+    width: 15%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    background-color: white;
+    color: rgb(98, 0, 114);
+    top: 0%;
+    z-index: 1;
+}
+
+#start-button:hover{
+    background-color: rgba(255, 255, 255, 0.685);
+    cursor: pointer;
+}
+
+#game-screen{
+    /* change below */
+    visibility: hidden;
+    z-index: 3;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+input::-webkit-input-placeholder{
+    font-size: 20px;
+}
+
+#score{
+    width: 85%;
+}
+
+#your-score{
+    visibility: hidden;
+    left: 37%;
+    position: relative;
+    display: flex;
+    z-index: 2;
+    flex-direction: column;
+}
+#scr{
+    position: relative;
+    margin-top:-100px;
+}
+#your-score{
+    position: absolute;
+    margin-top: 10px;
+}
+
+#again{
+    width: 140px;
+    position: relative;
+    height: 100px;
+    background-color: white;
+    top: -450px;
+    border-radius: 18px;
+    color:rgb(98, 0, 114);
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+
+}
+
+#again:hover{
+    background-color: rgba(255, 255, 255, 0.514);
+}
+
+@media all and (max-width:768px)
+{
+    #input{
+        width: 350px;
+        height: 600px;
+    }
+
+    #start-button{
+        font-size: 20px;
+        width: 150px;
+    }
+    #your-score{
+        left: 25%;
+        position: relative;
+        display: flex;
+        z-index: 2;
+        flex-direction: column;
+    }
+    #scr{
+        position: relative;
+        font-size: 20px;
+        margin-top:-300px;
+    }
+    #your-score{
+        position: absolute;
+        margin-top: 10px;
+        font-size: 20px;    
+    }
+
+    #your-score p, #your-score span {
+        font-size: 20px;
+    }
+
+    #again{
+        position: relative;
+        background-color: aliceblue;
+        width: 100px;
+        display: flex;
+        border-radius: 18px;
+        height: 60px;
+        color:rgb(98, 0, 114);
+        justify-content: center;
+        cursor: pointer;
+        font-size: 20px;
+        top: -550px;
+    }
+
+
+}
